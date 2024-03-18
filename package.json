@@ -10,5 +10,8 @@
     "SASS"
   ],
   "author": "Jordy Manuel Menchaca Rodriguez",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.72.0"
+  }
 }
