@@ -24,7 +24,7 @@
     "gulp-sass": "^5.1.0",
     "gulp-sourcemaps": "^3.0.0",
     "gulp-terser-js": "^5.2.2",
-    "gulp-webp": "^5.0.0",
+    "gulp-webp": "^4.0.1",
     "postcss": "^8.4.36",
     "sass": "^1.72.0"
   }
