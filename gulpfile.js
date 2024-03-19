@@ -1,4 +1,4 @@
-const {src, dest, whatch, parallel} = require('gulp');
+const {src, dest, watch, parallel} = require('gulp');
 
 // CSS
 const sass = require('gulp-sass')(require('sass'));
@@ -48,8 +48,8 @@ function javaScript(done) {
 }
 
 function dev(done) {
-    whatch("src/scss/**/*.scss", css)
-    whatch("src/js/**/*.js", javaScript)
+    watch("src/scss/**/*.scss", css)
+    watch("src/js/**/*.js", javaScript)
     done();
 }
 
