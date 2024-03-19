@@ -329,7 +329,6 @@ template {
   background-position: center center;
   height: 100vh;
 }
-
 #inicio .contenido header {
   background-color: rgba(0, 0, 0, 0.8);
   position: fixed;
@@ -337,8 +336,7 @@ template {
   z-index: 100;
   top: 0;
 }
-
-.contenido-header {
+#inicio .contenido-header {
   max-width: 110rem;
   margin: auto;
   display: flex;
@@ -346,12 +344,10 @@ template {
   align-items: center;
   padding: 1rem 2rem;
 }
-
 #inicio .contenido-header a {
   text-decoration: none;
 }
-
-.contenido-header h1 {
+#inicio .contenido-header h1 {
   text-align: center;
   font-size: 3rem;
   color: #1877F2;
@@ -362,7 +358,6 @@ template {
   display: flex;
   align-items: center;
 }
-
 .contenido-header nav ul li a {
   text-decoration: none;
   color: #fff;
@@ -371,7 +366,6 @@ template {
   font-weight: 300;
   transition: 0.5s;
 }
-
 .contenido-header nav ul li a:hover {
   color: #1877F2;
 }
@@ -380,24 +374,21 @@ template {
   display: flex;
   gap: 1rem;
 }
-
-.redes a {
+#inicio .redes a {
   text-decoration: none;
   font-size: 2.5rem;
   color: #fff;
   margin: auto;
   transition: 0.5s;
 }
-
-.redes .face a:hover {
+#inicio .redes .face a:hover {
   color: #1877F2;
 }
-
-.redes .git a:hover {
+#inicio .redes .git a:hover {
   color: #78288c;
 }
 
-#inicio .contenido header .contenido-header .seleccionado {
+#inicio .seleccionado {
   color: #1877F2;
 }
 
@@ -411,25 +402,12 @@ template {
   align-items: center;
   justify-content: center;
 }
-
 .presentacion .bienvenida {
   font-size: 3rem;
   margin-bottom: 2rem;
   text-transform: uppercase;
   letter-spacing: 0.7rem;
 }
-
-.presentacion h2 {
-  font-size: 4.5rem;
-  margin-bottom: 2.5rem;
-  text-align: center;
-}
-
-.presentacion h2 span {
-  font-size: 3rem;
-  color: #1877F2;
-}
-
 .presentacion .descripcion {
   max-width: 70rem;
   margin: 2.5rem auto;
@@ -437,6 +415,15 @@ template {
   text-align: center;
 }
 
+.presentacion h2 {
+  font-size: 4.5rem;
+  margin-bottom: 2.5rem;
+  text-align: center;
+}
+.presentacion h2 span {
+  font-size: 3rem;
+  color: #1877F2;
+}
 .presentacion a {
   text-decoration: none;
   display: inline-block;
@@ -451,7 +438,6 @@ template {
   letter-spacing: 0.5rem;
   font-size: 1.5rem;
 }
-
 .presentacion a:hover {
   background-color: #1877F2;
 }
