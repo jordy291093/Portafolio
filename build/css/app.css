@@ -324,7 +324,7 @@ template {
 }
 
 #inicio {
-  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../../img/fondo.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../../../build/img/fondo.jpg");
   background-size: cover;
   background-position: center center;
   height: 100vh;
@@ -376,17 +376,25 @@ template {
   color: #1877F2;
 }
 
+#inicio .redes {
+  display: flex;
+  gap: 1rem;
+}
+
 .redes a {
   text-decoration: none;
   font-size: 2.5rem;
   color: #fff;
-  display: inline-block;
   margin: auto;
   transition: 0.5s;
 }
 
-.redes a:hover {
+.redes .face a:hover {
   color: #1877F2;
+}
+
+.redes .git a:hover {
+  color: #78288c;
 }
 
 #inicio .contenido header .contenido-header .seleccionado {

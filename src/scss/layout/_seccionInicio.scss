@@ -2,7 +2,7 @@
 @use 'base/mixin' as m;
 
 #inicio {
-    background: linear-gradient(rgba(0,0,0,.7), rgba(0,0,0,.7)), url("../../img/fondo.jpg");
+    background: linear-gradient(rgba(0,0,0,.7), rgba(0,0,0,.7)), url("../../../build/img/fondo.jpg");
     background-size: cover;
     background-position: center center;
     height: 100vh;
@@ -46,17 +46,22 @@
 .contenido-header nav ul li a:hover {
     color: v.$azul; 
 }
-
+#inicio .redes {
+    display: flex;
+    gap: 1rem;
+}
 .redes a {
     text-decoration: none;
     font-size: 2.5rem;
     color: v.$blanco;
-    display: inline-block;
     margin: auto;
     transition: .5s;
 }
-.redes a:hover {
+.redes .face a:hover {
     color: v.$azul;
+}
+.redes .git a:hover {
+    color: v.$morado;
 }
 #inicio .contenido header .contenido-header .seleccionado {
     color: v.$azul;
