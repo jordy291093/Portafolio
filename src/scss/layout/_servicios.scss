@@ -1,0 +1,65 @@
+@use 'base/mixins' as m;
+@use 'base/variables' as v;
+
+#servicios {
+    padding: 10rem 1.5rem;
+    text-align: center;
+    background-color: v.$grisClaro;
+
+    .titulo-seccion {
+        font-size: 3rem;
+        text-transform: uppercase;
+        color: v.$azulOscuro;
+        text-decoration: underline;
+        text-decoration-color: #d3d3d3;
+        text-decoration-thickness: .5rem;
+    }
+    
+    .fila {
+        display: flex;
+        justify-content: space-between;
+        max-width: 110rem;
+        margin: 3rem auto;
+        gap: 1rem;
+    }
+
+    .servicio {
+        max-width: 35rem;
+        background-color: v.$blanco;
+        padding: 3rem;
+        margin: 0 .5rem;
+        border-radius: .5rem;
+        transition: .5s;
+        &:hover {
+            box-shadow: .5rem .5rem 1rem v.$grisOscuro, -.5rem -.5rem 1rem #bababa;
+        }
+        h4 {
+            font-size: 2.2rem;
+            margin-bottom: 2.5rem;
+        }
+        hr {
+            width: 30%;
+            margin: auto;
+            color: v.$negro;
+            margin-bottom: 2.5rem;
+        }
+        ul {
+            list-style: none; 
+            display: flex;
+            justify-content: center;
+            margin-bottom: 1rem;
+        }
+        p {
+            font-size: 1.4rem;
+            line-height: 2.2rem;
+        }
+        .icono {
+            display: inline-block;
+            font-size: 2rem;
+            border-radius: 50%;
+            background-color: v.$grisClaro;
+            padding: 2rem;
+            margin-bottom: 2.5rem;
+        }
+    }
+}

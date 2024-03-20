@@ -514,3 +514,63 @@ template {
   background-color: #1877F2;
   color: #fff;
 }
+
+#servicios {
+  padding: 10rem 1.5rem;
+  text-align: center;
+  background-color: #f3f3f3;
+}
+#servicios .titulo-seccion {
+  font-size: 3rem;
+  text-transform: uppercase;
+  color: #111135;
+  text-decoration: underline;
+  text-decoration-color: #d3d3d3;
+  text-decoration-thickness: 0.5rem;
+}
+#servicios .fila {
+  display: flex;
+  justify-content: space-between;
+  max-width: 110rem;
+  margin: 3rem auto;
+  gap: 1rem;
+}
+#servicios .servicio {
+  max-width: 35rem;
+  background-color: #fff;
+  padding: 3rem;
+  margin: 0 0.5rem;
+  border-radius: 0.5rem;
+  transition: 0.5s;
+}
+#servicios .servicio:hover {
+  box-shadow: 0.5rem 0.5rem 1rem #565656, -0.5rem -0.5rem 1rem #bababa;
+}
+#servicios .servicio h4 {
+  font-size: 2.2rem;
+  margin-bottom: 2.5rem;
+}
+#servicios .servicio hr {
+  width: 30%;
+  margin: auto;
+  color: #000;
+  margin-bottom: 2.5rem;
+}
+#servicios .servicio ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+#servicios .servicio p {
+  font-size: 1.4rem;
+  line-height: 2.2rem;
+}
+#servicios .servicio .icono {
+  display: inline-block;
+  font-size: 2rem;
+  border-radius: 50%;
+  background-color: #f3f3f3;
+  padding: 2rem;
+  margin-bottom: 2.5rem;
+}
