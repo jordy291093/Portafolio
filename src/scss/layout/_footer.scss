@@ -1,0 +1,18 @@
+@use 'base/mixins' as m;
+@use 'base/variables' as v;
+
+footer {
+    background-color: var(--negro);
+    color: var(--blanco);
+    text-align: center;
+    padding: 3rem 0;
+
+    p {
+        letter-spacing: .2rem;
+        font-size: 2rem;
+    }
+
+    .redes {
+        margin-top: 1rem;
+    }
+}
