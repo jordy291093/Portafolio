@@ -35,6 +35,10 @@
             color: v.$azul; 
         }
     }
+
+    .seleccionado {
+        color: v.$azul;
+    }
 }
 .contenido-header {
     nav {
@@ -58,35 +62,6 @@
                 }
             }
         }
-    }
-}
-#inicio {
-    .seleccionado {
-        color: v.$azul;
-    }
-}
-.presentacion {
-    max-width: 110rem;
-    height: 100vh;
-    margin: auto;
-    color: v.$blanco;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-
-    .bienvenida {
-        font-size: 3rem;
-        margin-bottom: 2rem;
-        text-transform: uppercase;
-        letter-spacing: .7rem;
-    }
-
-    .descripcion {
-        max-width: 70rem;
-        margin: 2.5rem auto;
-        font-size: 1.8rem;
-        text-align: center;
     }
 }
 .presentacion {
@@ -116,6 +91,29 @@
         &:hover {
             background-color: v.$azul;
         }
+    }
+
+    max-width: 110rem;
+    height: 100vh;
+    margin: auto;
+    color: v.$blanco;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    .bienvenida {
+        font-size: 3rem;
+        margin-bottom: 2rem;
+        text-transform: uppercase;
+        letter-spacing: .7rem;
+    }
+
+    .descripcion {
+        max-width: 70rem;
+        margin: 2.5rem auto;
+        font-size: 1.8rem;
+        text-align: center;
     }
 }
 #icono-nav {

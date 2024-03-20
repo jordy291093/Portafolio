@@ -370,6 +370,9 @@ template {
   font-size: 3rem;
   color: #1877F2;
 }
+#inicio .seleccionado {
+  color: #1877F2;
+}
 
 .contenido-header nav ul {
   list-style: none;
@@ -388,10 +391,6 @@ template {
   color: #1877F2;
 }
 
-#inicio .seleccionado {
-  color: #1877F2;
-}
-
 .presentacion {
   max-width: 110rem;
   height: 100vh;
@@ -402,19 +401,6 @@ template {
   align-items: center;
   justify-content: center;
 }
-.presentacion .bienvenida {
-  font-size: 3rem;
-  margin-bottom: 2rem;
-  text-transform: uppercase;
-  letter-spacing: 0.7rem;
-}
-.presentacion .descripcion {
-  max-width: 70rem;
-  margin: 2.5rem auto;
-  font-size: 1.8rem;
-  text-align: center;
-}
-
 .presentacion h2 {
   font-size: 4.5rem;
   margin-bottom: 2.5rem;
@@ -440,6 +426,18 @@ template {
 }
 .presentacion a:hover {
   background-color: #1877F2;
+}
+.presentacion .bienvenida {
+  font-size: 3rem;
+  margin-bottom: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 0.7rem;
+}
+.presentacion .descripcion {
+  max-width: 70rem;
+  margin: 2.5rem auto;
+  font-size: 1.8rem;
+  text-align: center;
 }
 
 #icono-nav {
