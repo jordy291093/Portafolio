@@ -1,0 +1,61 @@
+@use 'base/mixins' as m;
+@use 'base/variables' as v;
+
+#contacto {
+    padding: 10rem 1.5rem;
+
+    .titulo-seccion {
+        margin-bottom: 2rem;
+        font-size: 3rem;
+        text-align: center;
+        text-transform: uppercase;
+        color: v.$azul;
+        text-decoration: underline;
+        text-decoration-color: v.$grisOscuro;
+        text-decoration-thickness: .5rem;
+    }
+
+    .contenedor-form {
+        max-width: 110rem;
+        margin: auto;
+
+        input, textarea {
+            font-size: 1.5rem;
+            padding: 2rem;
+            border-radius: 2rem;
+            border: none;
+            border: .1rem solid #919191;
+        }
+    }
+
+    .fila {
+        margin-bottom: 1.5rem;
+    }
+
+    .mitad {
+        display: flex;
+        justify-content: space-between;
+
+        input {
+            width: 40%;
+        }
+    }
+
+    .input-full {
+        width: 100%;
+    }
+
+    .btn-enviar {
+        display: block;
+        margin: auto;
+        cursor: pointer;
+        transition: .5s;
+        padding: 1rem 1.5rem ;
+        font-weight: bold;
+
+        &:hover {
+            background-color: v.$azul;
+            color: v.$blanco;
+        }
+    }
+}

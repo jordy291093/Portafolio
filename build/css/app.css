@@ -637,3 +637,53 @@ template {
 #portfolio .proyecto .info p {
   font-size: 1.5rem;
 }
+
+#contacto {
+  padding: 10rem 1.5rem;
+}
+#contacto .titulo-seccion {
+  margin-bottom: 2rem;
+  font-size: 3rem;
+  text-align: center;
+  text-transform: uppercase;
+  color: #1877F2;
+  text-decoration: underline;
+  text-decoration-color: #565656;
+  text-decoration-thickness: 0.5rem;
+}
+#contacto .contenedor-form {
+  max-width: 110rem;
+  margin: auto;
+}
+#contacto .contenedor-form input, #contacto .contenedor-form textarea {
+  font-size: 1.5rem;
+  padding: 2rem;
+  border-radius: 2rem;
+  border: none;
+  border: 0.1rem solid #919191;
+}
+#contacto .fila {
+  margin-bottom: 1.5rem;
+}
+#contacto .mitad {
+  display: flex;
+  justify-content: space-between;
+}
+#contacto .mitad input {
+  width: 40%;
+}
+#contacto .input-full {
+  width: 100%;
+}
+#contacto .btn-enviar {
+  display: block;
+  margin: auto;
+  cursor: pointer;
+  transition: 0.5s;
+  padding: 1rem 1.5rem;
+  font-weight: bold;
+}
+#contacto .btn-enviar:hover {
+  background-color: #1877F2;
+  color: #fff;
+}
