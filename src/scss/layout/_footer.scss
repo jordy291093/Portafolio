@@ -2,8 +2,8 @@
 @use 'base/variables' as v;
 
 footer {
-    background-color: var(--negro);
-    color: var(--blanco);
+    background-color: v.$negro;
+    color: v.$blanco;
     text-align: center;
     padding: 3rem 0;
 
@@ -14,5 +14,6 @@ footer {
 
     .redes {
         margin-top: 1rem;
+        justify-content: center;
     }
 }
