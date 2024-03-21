@@ -1,81 +1,132 @@
 @use 'base/mixins' as m;
 @use 'base/variables' as v;
 
-@include m.tablet {
-    nav.responsive {
-        display: block;
-        background-color: rgba(0,0,0,.8);
-        width: 100%;
-        position: absolute;
-        top: 4.8rem;
-        left: 0;
-        padding: 1rem 0;
+.redes {
+    @include m.tablet {
+        display: none;
     }
-    nav.responsive ul {
-        display: block !important;
-        text-align: center;
+}
+
+nav {
+    @include m.tablet {
+        display: none;
     }
-    nav.responsive ul li {
-        margin: 1rem 0;
+    &.responsive {
+        @include m.tablet {
+            display: block;
+            background-color: rgba(0,0,0,.8);
+            width: 100%;
+            position: absolute;
+            top: 4.8rem;
+            left: 0;
+            padding: 1rem 0;
+        }
+        ul {
+            @include m.tablet {
+                display: block !important;
+                text-align: center;
+            }
+            li {
+                @include m.tablet {
+                    margin: 1rem 0;
+                }
+            }
+        }
     }
-    #icono-nav {
+}
+#icono-nav {
+    @include m.tablet {
         display: block;
         font-size: 2.5rem;
         cursor: pointer;
     }
-    #inicio .presentacion h2 {
-        font-size: 4rem;
+}
+#inicio {
+    .presentacion {
+        h2 {
+            @include m.tablet {
+                font-size: 4rem;
+            }
+        }
     }
-    #sobreMi {
+}
+#sobreMi {
+    @include m.tablet {
         padding: 5rem 0;
         display: block;
     }
-    #sobreMi .contenedor-foto {
-        max-width: 30rem;
-        margin: auto;
+    .contenedor-foto {
+        @include m.tablet {
+            max-width: 30rem;
+            margin: auto;
+        }
+        img {
+            @include m.tablet {
+               padding: .8rem;
+            }
+        }
     }
-    #sobreMi .contenedor-foto img {
-        padding: .8rem;
+    .titulo-seccion {
+        @include m.tablet {
+            margin-top: 1.5rem;
+            text-align: center;
+        }
     }
-    #sobreMi .titulo-seccion {
-        margin-top: 1.5rem;
-        text-align: center;
+    .sobremi {
+        h2 {
+            @include m.tablet {
+                text-align: center;
+            }
+        }
     }
-    #sobreMi .sobremi h2 {
-        text-align: center;
+}
+#servicios {
+    @include m.tablet {
+        padding: 5rem 1.5rem;       
     }
-    #servicios {
-        padding: 5rem 1.5rem;
+    .fila {
+        @include m.tablet {
+            display: block;
+        }
     }
-    #servicios .fila {
-        display: block;
+    .servicio {
+        @include m.tablet {
+            margin: 1rem auto;
+        }
     }
-    #servicios .servicio {
-        margin: 1rem auto;
-    }
-    .contenedor-skills {
-        padding: 5rem 2rem;
-        padding-bottom: 1rem;
-    }
-    #portfolio {
+}
+#portafolio {
+    @include m.tablet {
         padding: 5rem 0;
     }
-    #portfolio .fila {
-        display: block;
+    .fila {
+        @include m.tablet {
+            display: block;
+        }
+        .proyecto {
+            @include m.tablet {
+                margin: 1rem auto;
+            }
+        }
     }
-    #portfolio .fila .proyecto {
-        margin: 1rem auto;
-    }
-    #contacto {
+}
+.contacto {
+    @include m.tablet {
         padding: 5rem 1.5rem;
         padding-top: 0;
     }
-    #contacto .contenedor-form .mitad {
-        margin-bottom: 1.5rem;
-        display: block;
-    }
-    #contacto .contenedor-form .mitad input {
-        width: 100%;
-        margin-bottom: 1.5rem;
+    .contenedor-form {
+        .mitad {
+            @include m.tablet {
+                margin-bottom: 1.5rem;
+                display: block;
+            }
+            input {
+                @include m.tablet {
+                    width: 100%;
+                    margin-bottom: 1.5rem;
+                }
+            }
+        }
     }
 }

@@ -324,6 +324,17 @@ template {
 }
 
 @media (max-width: 768px) {
+  .redes {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  nav {
+    display: none;
+  }
+}
+@media (max-width: 768px) {
   nav.responsive {
     display: block;
     background-color: rgba(0, 0, 0, 0.8);
@@ -333,74 +344,113 @@ template {
     left: 0;
     padding: 1rem 0;
   }
+}
+@media (max-width: 768px) {
   nav.responsive ul {
     display: block !important;
     text-align: center;
   }
+}
+@media (max-width: 768px) {
   nav.responsive ul li {
     margin: 1rem 0;
   }
+}
+
+@media (max-width: 768px) {
   #icono-nav {
     display: block;
     font-size: 2.5rem;
     cursor: pointer;
   }
+}
+
+@media (max-width: 768px) {
   #inicio .presentacion h2 {
     font-size: 4rem;
   }
+}
+
+@media (max-width: 768px) {
   #sobreMi {
     padding: 5rem 0;
     display: block;
   }
+}
+@media (max-width: 768px) {
   #sobreMi .contenedor-foto {
     max-width: 30rem;
     margin: auto;
   }
+}
+@media (max-width: 768px) {
   #sobreMi .contenedor-foto img {
     padding: 0.8rem;
   }
+}
+@media (max-width: 768px) {
   #sobreMi .titulo-seccion {
     margin-top: 1.5rem;
     text-align: center;
   }
+}
+@media (max-width: 768px) {
   #sobreMi .sobremi h2 {
     text-align: center;
   }
+}
+
+@media (max-width: 768px) {
   #servicios {
     padding: 5rem 1.5rem;
   }
+}
+@media (max-width: 768px) {
   #servicios .fila {
     display: block;
   }
+}
+@media (max-width: 768px) {
   #servicios .servicio {
     margin: 1rem auto;
   }
-  .contenedor-skills {
-    padding: 5rem 2rem;
-    padding-bottom: 1rem;
-  }
-  #portfolio {
+}
+
+@media (max-width: 768px) {
+  #portafolio {
     padding: 5rem 0;
   }
-  #portfolio .fila {
+}
+@media (max-width: 768px) {
+  #portafolio .fila {
     display: block;
   }
-  #portfolio .fila .proyecto {
+}
+@media (max-width: 768px) {
+  #portafolio .fila .proyecto {
     margin: 1rem auto;
   }
-  #contacto {
+}
+
+@media (max-width: 768px) {
+  .contacto {
     padding: 5rem 1.5rem;
     padding-top: 0;
   }
-  #contacto .contenedor-form .mitad {
+}
+@media (max-width: 768px) {
+  .contacto .contenedor-form .mitad {
     margin-bottom: 1.5rem;
     display: block;
   }
-  #contacto .contenedor-form .mitad input {
+}
+@media (max-width: 768px) {
+  .contacto .contenedor-form .mitad input {
     width: 100%;
     margin-bottom: 1.5rem;
   }
 }
+
 .redes {
   display: flex;
   gap: 1rem;
