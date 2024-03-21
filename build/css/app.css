@@ -639,7 +639,7 @@ template {
 }
 
 #servicios {
-  padding: 10rem 1.5rem;
+  padding: 5rem 1.5rem;
   text-align: center;
   background-color: #f3f3f3;
 }
@@ -700,7 +700,7 @@ template {
 
 #portfolio {
   max-width: 110rem;
-  padding: 10rem 0;
+  padding: 5rem 0;
   margin: auto;
 }
 #portfolio .titulo-seccion {
@@ -762,7 +762,7 @@ template {
 }
 
 #contacto {
-  padding: 10rem 1.5rem;
+  padding: 3rem 1.5rem;
 }
 #contacto .titulo-seccion {
   margin-bottom: 2rem;
