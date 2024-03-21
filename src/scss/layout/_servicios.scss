@@ -16,11 +16,9 @@
     }
     
     .fila {
-        display: flex;
-        justify-content: space-between;
+        @include m.grid(3, 2rem);
         max-width: 110rem;
-        margin: 3rem auto;
-        gap: 1rem;
+        margin: auto;
     }
 
     .servicio {

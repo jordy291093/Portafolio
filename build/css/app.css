@@ -652,11 +652,11 @@ template {
   text-decoration-thickness: 0.5rem;
 }
 #servicios .fila {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
   max-width: 110rem;
-  margin: 3rem auto;
-  gap: 1rem;
+  margin: auto;
 }
 #servicios .servicio {
   max-width: 35rem;
