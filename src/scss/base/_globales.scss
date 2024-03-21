@@ -1,17 +1,35 @@
 @use 'variables' as v;
 @use 'base/mixins' as m;
 
-* {
-    margin: 0;
-    padding: 0;
+// * {
+//     margin: 0;
+//     padding: 0;
+//     box-sizing: border-box;
+//     font-family: v.$principal;
+// }
+// h1, h2, h3 {
+//     margin: 0;
+// }
+
+// html {
+//     font-size: 62.5%;
+//     scroll-behavior: smooth;
+// }
+html{
     box-sizing: border-box;
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+*, *:before, *:after{
+    box-sizing: inherit;
+}
+
+body {
     font-family: v.$principal;
 }
 h1, h2, h3 {
     margin: 0;
 }
-
-html {
-    font-size: 62.5%;
-    scroll-behavior: smooth;
+a {
+    text-decoration: none;
 }
