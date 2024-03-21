@@ -700,7 +700,7 @@ template {
 
 #portfolio {
   max-width: 110rem;
-  padding: 5rem 0;
+  padding: 5rem 1rem;
   margin: auto;
 }
 #portfolio .titulo-seccion {
@@ -713,8 +713,9 @@ template {
   text-decoration-thickness: 0.5rem;
 }
 #portfolio .fila {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
   margin: 3rem 0;
 }
 #portfolio .fila:last-of-type {
@@ -760,9 +761,29 @@ template {
 #portfolio .proyecto .info p {
   font-size: 1.5rem;
 }
+#portfolio .vermas {
+  text-align: center;
+}
+#portfolio .vermas a {
+  background-color: #f3f3f3;
+  text-decoration: none;
+  font-size: 1.5rem;
+  padding: 1rem;
+  font-weight: bold;
+  color: #000;
+  border: 0.2rem solid #000;
+  border-radius: 2rem;
+  letter-spacing: 0.2rem;
+  transition: 0.5s;
+}
+#portfolio .vermas a:hover {
+  background-color: #1877F2;
+  color: #fff;
+}
 
 #contacto {
   padding: 3rem 1.5rem;
+  background-color: #f3f3f3;
 }
 #contacto .titulo-seccion {
   margin-bottom: 2rem;
