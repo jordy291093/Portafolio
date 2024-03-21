@@ -323,6 +323,84 @@ template {
   display: none;
 }
 
+@media (max-width: 768px) {
+  nav.responsive {
+    display: block;
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 100%;
+    position: absolute;
+    top: 4.8rem;
+    left: 0;
+    padding: 1rem 0;
+  }
+  nav.responsive ul {
+    display: block !important;
+    text-align: center;
+  }
+  nav.responsive ul li {
+    margin: 1rem 0;
+  }
+  #icono-nav {
+    display: block;
+    font-size: 2.5rem;
+    cursor: pointer;
+  }
+  #inicio .presentacion h2 {
+    font-size: 4rem;
+  }
+  #sobreMi {
+    padding: 5rem 0;
+    display: block;
+  }
+  #sobreMi .contenedor-foto {
+    max-width: 30rem;
+    margin: auto;
+  }
+  #sobreMi .contenedor-foto img {
+    padding: 0.8rem;
+  }
+  #sobreMi .titulo-seccion {
+    margin-top: 1.5rem;
+    text-align: center;
+  }
+  #sobreMi .sobremi h2 {
+    text-align: center;
+  }
+  #servicios {
+    padding: 5rem 1.5rem;
+  }
+  #servicios .fila {
+    display: block;
+  }
+  #servicios .servicio {
+    margin: 1rem auto;
+  }
+  .contenedor-skills {
+    padding: 5rem 2rem;
+    padding-bottom: 1rem;
+  }
+  #portfolio {
+    padding: 5rem 0;
+  }
+  #portfolio .fila {
+    display: block;
+  }
+  #portfolio .fila .proyecto {
+    margin: 1rem auto;
+  }
+  #contacto {
+    padding: 5rem 1.5rem;
+    padding-top: 0;
+  }
+  #contacto .contenedor-form .mitad {
+    margin-bottom: 1.5rem;
+    display: block;
+  }
+  #contacto .contenedor-form .mitad input {
+    width: 100%;
+    margin-bottom: 1.5rem;
+  }
+}
 .redes {
   display: flex;
   gap: 1rem;
@@ -699,83 +777,4 @@ footer p {
 footer .redes {
   margin-top: 1rem;
   justify-content: center;
-}
-
-@media (max-width: 768px) {
-  nav.responsive {
-    display: block;
-    background-color: rgba(0, 0, 0, 0.8);
-    width: 100%;
-    position: absolute;
-    top: 4.8rem;
-    left: 0;
-    padding: 1rem 0;
-  }
-  nav.responsive ul {
-    display: block !important;
-    text-align: center;
-  }
-  nav.responsive ul li {
-    margin: 1rem 0;
-  }
-  #icono-nav {
-    display: block;
-    font-size: 2.5rem;
-    cursor: pointer;
-  }
-  #inicio .presentacion h2 {
-    font-size: 4rem;
-  }
-  #sobreMi {
-    padding: 5rem 0;
-    display: block;
-  }
-  #sobreMi .contenedor-foto {
-    max-width: 30rem;
-    margin: auto;
-  }
-  #sobreMi .contenedor-foto img {
-    padding: 0.8rem;
-  }
-  #sobreMi .titulo-seccion {
-    margin-top: 1.5rem;
-    text-align: center;
-  }
-  #sobreMi .sobremi h2 {
-    text-align: center;
-  }
-  #servicios {
-    padding: 5rem 1.5rem;
-  }
-  #servicios .fila {
-    display: block;
-  }
-  #servicios .servicio {
-    margin: 1rem auto;
-  }
-  .contenedor-skills {
-    padding: 5rem 2rem;
-    padding-bottom: 1rem;
-  }
-  #portfolio {
-    padding: 5rem 0;
-  }
-  #portfolio .fila {
-    display: block;
-  }
-  #portfolio .fila .proyecto {
-    margin: 1rem auto;
-  }
-  #contacto {
-    padding: 5rem 1.5rem;
-    padding-top: 0;
-  }
-  #contacto .contenedor-form .mitad {
-    margin-bottom: 1.5rem;
-    display: block;
-  }
-  #contacto .contenedor-form .mitad input {
-    width: 100%;
-    margin-bottom: 1.5rem;
-  }
 }
