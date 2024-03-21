@@ -1,47 +1,46 @@
 @use 'base/mixins' as m;
 @use 'base/variables' as v;
 
-.redes {
-    @include m.tablet {
-        display: none;
-    }
-}
-
-nav {
-    @include m.tablet {
-        display: none;
-    }
-    &.responsive {
+#inicio {
+    .redes {
         @include m.tablet {
-            display: block;
-            background-color: rgba(0,0,0,.8);
-            width: 100%;
-            position: absolute;
-            top: 4.8rem;
-            left: 0;
-            padding: 1rem 0;
+            display: none;
         }
-        ul {
+    }
+    nav {
+        @include m.tablet {
+            display: none;
+        }
+        &.responsive {
             @include m.tablet {
-                display: block !important;
-                text-align: center;
+                display: block;
+                background-color: rgba(0,0,0,.8);
+                width: 100%;
+                position: absolute;
+                top: 4.8rem;
+                left: 0;
+                padding: 1rem 0;
             }
-            li {
+            ul {
                 @include m.tablet {
-                    margin: 1rem 0;
+                    display: block !important;
+                    text-align: center;
+                }
+                li {
+                    @include m.tablet {
+                        margin: 1rem 0;
+                    }
                 }
             }
         }
     }
-}
-#icono-nav {
-    @include m.tablet {
-        display: block;
-        font-size: 2.5rem;
-        cursor: pointer;
+    #icono-nav {
+        @include m.tablet {
+            display: block;
+            font-size: 2.5rem;
+            cursor: pointer;
+        }
     }
-}
-#inicio {
     .presentacion {
         h2 {
             @include m.tablet {

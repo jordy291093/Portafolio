@@ -324,18 +324,17 @@ template {
 }
 
 @media (max-width: 768px) {
-  .redes {
-    display: none;
-  }
-}
-
-@media (max-width: 768px) {
-  nav {
+  #inicio .redes {
     display: none;
   }
 }
 @media (max-width: 768px) {
-  nav.responsive {
+  #inicio nav {
+    display: none;
+  }
+}
+@media (max-width: 768px) {
+  #inicio nav.responsive {
     display: block;
     background-color: rgba(0, 0, 0, 0.8);
     width: 100%;
@@ -346,25 +345,23 @@ template {
   }
 }
 @media (max-width: 768px) {
-  nav.responsive ul {
+  #inicio nav.responsive ul {
     display: block !important;
     text-align: center;
   }
 }
 @media (max-width: 768px) {
-  nav.responsive ul li {
+  #inicio nav.responsive ul li {
     margin: 1rem 0;
   }
 }
-
 @media (max-width: 768px) {
-  #icono-nav {
+  #inicio #icono-nav {
     display: block;
     font-size: 2.5rem;
     cursor: pointer;
   }
 }
-
 @media (max-width: 768px) {
   #inicio .presentacion h2 {
     font-size: 4rem;
