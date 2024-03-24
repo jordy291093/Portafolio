@@ -16,8 +16,51 @@ h1, h2, h3 {
   margin: 0;
 }
 
-a {
+.btn a {
   text-decoration: none;
+  display: inline-block;
+  color: #000;
+  border-radius: 3rem;
+  padding: 1rem 2rem;
+  border: 0.1rem solid #000;
+  transition: 0.5s;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 1rem;
+}
+.btn a:hover {
+  background-color: #1877F2;
+  color: #fff;
+}
+
+.tecnologia {
+  display: flex;
+}
+.tecnologia .fa-brands {
+  margin: 0.5rem;
+  font-size: 2.5rem;
+}
+.tecnologia .fa-brands.fa-css3-alt {
+  color: #3498DB;
+}
+.tecnologia .fa-brands.fa-html5 {
+  color: #F39C12;
+}
+.tecnologia .fa-brands.fa-square-js {
+  color: #F4D03F;
+}
+.tecnologia .fa-brands.fa-sass {
+  color: #F9259C;
+}
+.tecnologia .fa-brands.fa-php {
+  color: #2980B9;
+}
+.tecnologia .fa-solid {
+  margin: 0.5rem;
+  font-size: 2.5rem;
+}
+.tecnologia .fa-solid.fa-database {
+  color: #565656;
 }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
@@ -541,20 +584,12 @@ template {
   color: #1877F2;
 }
 .presentacion a {
-  display: inline-block;
   margin: 2.5rem;
   padding: 2rem 2.5rem;
   border: 0.2rem solid #fff;
-  border-radius: 5rem;
   color: #fff;
-  font-weight: bold;
-  text-transform: uppercase;
-  transition: 0.5s;
-  letter-spacing: 0.5rem;
   font-size: 1.5rem;
-}
-.presentacion a:hover {
-  background-color: #1877F2;
+  text-transform: uppercase;
 }
 .presentacion .bienvenida {
   font-size: 3rem;
@@ -577,7 +612,7 @@ template {
 #sobreMi {
   max-width: 110rem;
   margin: auto;
-  padding: 10rem 1.5rem;
+  padding: 3rem 1.5rem;
   color: #111135;
   display: flex;
 }
@@ -626,23 +661,9 @@ template {
   color: #565656;
   margin-bottom: 1.2rem;
 }
-.sobremi a {
-  display: inline-block;
-  color: #000;
-  border-radius: 3rem;
-  padding: 1rem 2rem;
-  border: 0.1rem solid #000;
-  margin-top: 3rem;
-  transition: 0.5s;
-  font-size: 1.5rem;
-}
-.sobremi a:hover {
-  background-color: #1877F2;
-  color: #fff;
-}
 
 #servicios {
-  padding: 5rem 1.5rem;
+  padding: 3rem 1.5rem;
   text-align: center;
   background-color: #f3f3f3;
 }
@@ -653,6 +674,7 @@ template {
   text-decoration: underline;
   text-decoration-color: #d3d3d3;
   text-decoration-thickness: 0.5rem;
+  margin-bottom: 2rem;
 }
 #servicios .fila {
   display: grid;
@@ -703,7 +725,7 @@ template {
 
 #portfolio {
   max-width: 110rem;
-  padding: 5rem 1rem;
+  padding: 3rem 1rem;
   margin: auto;
 }
 #portfolio .titulo-seccion {
@@ -728,14 +750,14 @@ template {
   max-width: 45rem;
   border: 0.1rem solid #000;
   margin: 0 1rem;
+  background-color: #f3f3f3;
 }
 #portfolio .proyecto img {
   width: 100%;
   height: 100%;
 }
 #portfolio .proyecto .info {
-  background-color: #f3f3f3;
-  color: #1877F2;
+  color: #000;
   width: 100%;
   margin-top: 1rem;
 }
@@ -746,25 +768,14 @@ template {
 }
 #portfolio .proyecto .info p {
   font-size: 1.5rem;
-  margin: 0;
+  margin: 0.5rem 0;
+  line-height: 2.2rem;
 }
 #portfolio .vermas {
   text-align: center;
 }
-#portfolio .vermas a {
-  background-color: #f3f3f3;
-  font-size: 1.5rem;
-  padding: 1rem;
-  font-weight: bold;
-  color: #000;
-  border: 0.2rem solid #000;
-  border-radius: 2rem;
-  letter-spacing: 0.2rem;
-  transition: 0.5s;
-}
-#portfolio .vermas a:hover {
-  background-color: #1877F2;
-  color: #fff;
+#portfolio .ver {
+  text-align: center;
 }
 
 #contacto {

@@ -16,6 +16,50 @@ body {
 h1, h2, h3 {
     margin: 0;
 }
-a {
-    text-decoration: none;
+.btn {
+    a {
+        text-decoration: none;
+        display: inline-block;
+        color: v.$negro;
+        border-radius: 3rem;
+        padding: 1rem 2rem;
+        border: .1rem solid v.$negro;
+        transition: .5s;
+        font-size: 1.5rem;
+        font-weight: bold;
+        margin: 1rem;
+        &:hover {
+            background-color: v.$azul;
+            color: v.$blanco;
+        }
+    }
+}
+.tecnologia {
+    display: flex;
+    .fa-brands {
+        margin: .5rem;
+        font-size: 2.5rem;
+        &.fa-css3-alt {
+            color: v.$css;
+        }
+        &.fa-html5 {
+            color: v.$html;
+        }
+        &.fa-square-js {
+            color: v.$js;
+        }
+        &.fa-sass {
+            color: v.$sass;
+        }
+        &.fa-php {
+            color: v.$php;
+        }
+    }
+    .fa-solid {
+        margin: .5rem;
+        font-size: 2.5rem;
+        &.fa-database {
+            color: v.$sql;
+        }
+    }
 }
