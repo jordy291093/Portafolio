@@ -737,6 +737,7 @@ template {
   background-color: #f3f3f3;
   color: #1877F2;
   width: 100%;
+  margin-top: 1rem;
 }
 #portfolio .proyecto .info h4 {
   font-size: 2rem;
