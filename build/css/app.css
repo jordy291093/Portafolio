@@ -63,6 +63,23 @@ h1, h2, h3 {
   color: #565656;
 }
 
+.redes {
+  display: flex;
+  gap: 1rem;
+}
+.redes a {
+  font-size: 2.5rem;
+  color: #fff;
+  margin: auto;
+  transition: 0.5s;
+}
+.redes .face a:hover {
+  color: #1877F2;
+}
+.redes .git a:hover {
+  color: #78288c;
+}
+
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -495,23 +512,6 @@ template {
     width: 100%;
     margin-bottom: 1.5rem;
   }
-}
-
-.redes {
-  display: flex;
-  gap: 1rem;
-}
-.redes a {
-  font-size: 2.5rem;
-  color: #fff;
-  margin: auto;
-  transition: 0.5s;
-}
-.redes .face a:hover {
-  color: #1877F2;
-}
-.redes .git a:hover {
-  color: #78288c;
 }
 
 #inicio {

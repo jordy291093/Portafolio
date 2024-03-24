@@ -15,7 +15,7 @@ body {
 }
 h1, h2, h3 {
     margin: 0;
-}
+} //    Boton
 .btn {
     a {
         text-decoration: none;
@@ -34,6 +34,7 @@ h1, h2, h3 {
         }
     }
 }
+//  Tecnologia
 .tecnologia {
     display: flex;
     .fa-brands {
@@ -60,6 +61,27 @@ h1, h2, h3 {
         font-size: 2.5rem;
         &.fa-database {
             color: v.$sql;
+        }
+    }
+}
+//  Redes
+.redes {
+    display: flex;
+    gap: 1rem;
+    a {
+        font-size: 2.5rem;
+        color: v.$blanco;
+        margin: auto;
+        transition: .5s;
+    }
+    .face {
+        a:hover {
+            color: v.$azul;
+        }
+    }
+    .git {
+        a:hover {
+            color: v.$morado;
         }
     }
 }
