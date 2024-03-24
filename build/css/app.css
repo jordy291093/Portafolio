@@ -593,12 +593,12 @@ template {
   justify-content: center;
 }
 .presentacion h2 {
-  font-size: 4.5rem;
+  font-size: 3rem;
   margin-bottom: 2.5rem;
   text-align: center;
 }
 .presentacion h2 span {
-  font-size: 3rem;
+  font-size: 4rem;
   color: #1877F2;
 }
 .presentacion a {
@@ -679,6 +679,10 @@ template {
   line-height: 2.5rem;
   color: #565656;
   margin-bottom: 1.2rem;
+}
+.sobremi span {
+  color: #a435f0;
+  font-weight: bold;
 }
 
 #servicios {
