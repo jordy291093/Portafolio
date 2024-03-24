@@ -55,6 +55,12 @@ h1, h2, h3 {
 .tecnologia .fa-brands.fa-php {
   color: #2980B9;
 }
+.tecnologia .fa-brands.fa-gulp {
+  color: #cf4647;
+}
+.tecnologia .fa-brands.fa-npm {
+  color: #000;
+}
 .tecnologia .fa-solid {
   margin: 0.5rem;
   font-size: 2.5rem;

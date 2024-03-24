@@ -55,6 +55,12 @@ h1, h2, h3 {
         &.fa-php {
             color: v.$php;
         }
+        &.fa-gulp {
+            color: v.$gulp;
+        }
+        &.fa-npm {
+            color: v.$negro;
+        }
     }
     .fa-solid {
         margin: .5rem;
