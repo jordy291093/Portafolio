@@ -86,6 +86,15 @@ h1, h2, h3 {
   color: #78288c;
 }
 
+.pantalla {
+  display: flex;
+}
+.pantalla .fa-solid {
+  margin: 0.5rem;
+  font-size: 2.5rem;
+  color: #565656;
+}
+
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -552,6 +561,9 @@ template {
 #inicio .seleccionado {
   color: #1877F2;
 }
+#inicio .fa-brands.fa-npm {
+  color: #fff;
+}
 
 .contenido-header nav ul {
   list-style: none;
@@ -608,6 +620,7 @@ template {
   margin: 2.5rem auto;
   font-size: 1.8rem;
   text-align: center;
+  line-height: 2.5rem;
 }
 
 #icono-nav {

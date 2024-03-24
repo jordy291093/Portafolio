@@ -39,6 +39,11 @@
     .seleccionado {
         color: v.$azul;
     }
+    .fa-brands {
+        &.fa-npm {
+            color: v.$blanco;
+        }
+    }
 }
 .contenido-header {
     nav {
@@ -104,6 +109,7 @@
         margin: 2.5rem auto;
         font-size: 1.8rem;
         text-align: center;
+        line-height: 2.5rem;
     }
 }
 #icono-nav {
