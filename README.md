@@ -11,9 +11,7 @@ Un portafolio para mostrar mis proyectos actuales, futuros, experiencias, etc. y
 - Proyectos
 - Contacto
 
-# Detalles :bulb:
-- Responsive
-
-# Instalar Gulp
-####  Para instalar gulp y dependencias ejecuta este código en la terminal.
-`npm install`
+# Responsive :bulb:
+- Phone
+- Tablet
+- Desktop
