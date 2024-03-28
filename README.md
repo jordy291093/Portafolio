@@ -1,5 +1,3 @@
-![image](https://github.com/jordy291093/Portafolio/assets/112351586/1d4a95c2-efa4-446c-97b5-4e0d5bf9c717)
-
 # Portafolio :computer:
 ### Descripción:
 Un portafolio para mostrar mis proyectos actuales, futuros, experiencias, etc. y el portafolio se estará actualizando para brindar una mejor experiencia.
@@ -11,7 +9,10 @@ Un portafolio para mostrar mis proyectos actuales, futuros, experiencias, etc. y
 - Proyectos
 - Contacto
 
-# Responsive :bulb:
+# Responsive :desktop_computer:
 - Phone
 - Tablet
 - Desktop
+
+# Vew :dizzy:
+![image](https://github.com/jordy291093/Portafolio/assets/112351586/1d4a95c2-efa4-446c-97b5-4e0d5bf9c717)
