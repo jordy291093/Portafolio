@@ -17,11 +17,22 @@
     }
     
     .fila {
-        @include m.grid(3, 2rem);
-        max-width: 110rem;
-        margin: auto;
-    }
+        @include m.grid(2, 2rem);
+        .nota {
+            font-size: 2rem;
+            grid-column: 1 / 5;
+            grid-row: 2 / 3;
 
+            h1 {
+                margin: 0;
+            }
+        }
+    }
+    .tecnologia {
+        i {
+            font-size: 4rem;
+        }
+    }
     .servicio {
         max-width: 35rem;
         background-color: v.$blanco;
@@ -36,29 +47,13 @@
             font-size: 2.2rem;
             margin-bottom: 2.5rem;
         }
-        hr {
-            width: 30%;
-            margin: auto;
-            color: v.$negro;
-            margin-bottom: 2.5rem;
-        }
-        ul {
-            list-style: none; 
-            display: flex;
-            justify-content: center;
-            margin-bottom: 1rem;
-        }
-        p {
-            font-size: 1.4rem;
-            line-height: 2.2rem;
-        }
-        .icono {
-            display: inline-block;
-            font-size: 2rem;
-            border-radius: 50%;
-            background-color: v.$grisClaro;
-            padding: 2rem;
-            margin-bottom: 2.5rem;
+        .tecno {
+            @include m.grid(2, 2rem);
+            
+            .tecnologia {
+                display: flex;
+                flex-direction: column;
+            }
         }
     }
 }

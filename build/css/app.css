@@ -12,8 +12,14 @@ body {
   font-family: "Rubik", sans-serif;
 }
 
-h1, h2, h3 {
+h1, h2, h3, h4 {
   margin: 0;
+}
+
+.contenedor {
+  width: 95%;
+  max-width: 120rem;
+  margin: 0 auto;
 }
 
 .btn a {
@@ -38,7 +44,7 @@ h1, h2, h3 {
 }
 .tecnologia .fa-brands {
   margin: 0.5rem;
-  font-size: 2.5rem;
+  font-size: 3rem;
 }
 .tecnologia .fa-brands.fa-css3-alt {
   color: #3498DB;
@@ -59,11 +65,26 @@ h1, h2, h3 {
   color: #cf4647;
 }
 .tecnologia .fa-brands.fa-npm {
-  color: #000;
+  color: #cb3837;
+}
+.tecnologia .fa-brands.fa-node {
+  color: #A3BE8C;
+}
+.tecnologia .fa-brands.fa-vuejs {
+  color: #4fc08d;
+}
+.tecnologia .fa-brands.fa-git-alt {
+  color: #f14e32;
+}
+.tecnologia .fa-brands.fa-bootstrap {
+  color: #7952b3;
+}
+.tecnologia .fa-brands.fa-github {
+  color: #78288c;
 }
 .tecnologia .fa-solid {
   margin: 0.5rem;
-  font-size: 2.5rem;
+  font-size: 3rem;
 }
 .tecnologia .fa-solid.fa-database {
   color: #565656;
@@ -79,7 +100,7 @@ h1, h2, h3 {
   margin: auto;
   transition: 0.5s;
 }
-.redes .face a:hover {
+.redes .linkedin a:hover {
   color: #1877F2;
 }
 .redes .git a:hover {
@@ -404,167 +425,46 @@ template {
   display: none;
 }
 
-@media (max-width: 768px) {
-  #inicio .redes {
-    display: none;
-  }
-}
-@media (max-width: 768px) {
-  #inicio nav {
-    display: none;
-  }
-}
-@media (max-width: 768px) {
-  #inicio nav.responsive {
-    display: block;
-    background-color: rgba(0, 0, 0, 0.8);
-    width: 100%;
-    position: absolute;
-    top: 4.8rem;
-    left: 0;
-    padding: 1rem 0;
-  }
-}
-@media (max-width: 768px) {
-  #inicio nav.responsive ul {
-    display: block !important;
-    text-align: center;
-  }
-}
-@media (max-width: 768px) {
-  #inicio nav.responsive ul li {
-    margin: 1rem 0;
-  }
-}
-@media (max-width: 768px) {
-  #inicio #icono-nav {
-    display: block;
-    font-size: 2.5rem;
-    cursor: pointer;
-  }
-}
-@media (max-width: 768px) {
-  #inicio .presentacion h2 {
-    font-size: 4rem;
-  }
-}
-
-@media (max-width: 768px) {
-  #sobreMi {
-    padding: 5rem 0;
-    display: block;
-  }
-}
-@media (max-width: 768px) {
-  #sobreMi .contenedor-foto {
-    max-width: 30rem;
-    margin: auto;
-  }
-}
-@media (max-width: 768px) {
-  #sobreMi .contenedor-foto img {
-    padding: 0.8rem;
-  }
-}
-@media (max-width: 768px) {
-  #sobreMi .titulo-seccion {
-    margin-top: 1.5rem;
-    text-align: center;
-  }
-}
-@media (max-width: 768px) {
-  #sobreMi .sobremi h2 {
-    text-align: center;
-  }
-}
-
-@media (max-width: 768px) {
-  #servicios {
-    padding: 5rem 1.5rem;
-  }
-}
-@media (max-width: 768px) {
-  #servicios .fila {
-    display: block;
-  }
-}
-@media (max-width: 768px) {
-  #servicios .servicio {
-    margin: 1rem auto;
-  }
-}
-
-@media (max-width: 768px) {
-  #portafolio {
-    padding: 5rem 0;
-  }
-}
-@media (max-width: 768px) {
-  #portafolio .fila {
-    display: block;
-  }
-}
-@media (max-width: 768px) {
-  #portafolio .fila .proyecto {
-    margin: 1rem auto;
-  }
-}
-
-@media (max-width: 768px) {
-  .contacto {
-    padding: 5rem 1.5rem;
-    padding-top: 0;
-  }
-}
-@media (max-width: 768px) {
-  .contacto .contenedor-form .mitad {
-    margin-bottom: 1.5rem;
-    display: block;
-  }
-}
-@media (max-width: 768px) {
-  .contacto .contenedor-form .mitad input {
-    width: 100%;
-    margin-bottom: 1.5rem;
-  }
-}
-
 #inicio {
   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../../../build/img/fondo.jpg");
   background-size: cover;
   background-position: center center;
   height: 100vh;
 }
-#inicio .contenido header {
+
+.contenido header {
   background-color: rgba(0, 0, 0, 0.8);
   position: fixed;
   width: 100%;
   z-index: 100;
   top: 0;
 }
-#inicio .contenido-header {
+
+.seleccionado {
+  color: #1877F2;
+}
+
+.fa-brands.fa-npm {
+  color: #fff;
+}
+
+.contenido-header {
   max-width: 110rem;
+  height: 6rem;
   margin: auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 1rem 2rem;
 }
-#inicio .contenido-header a {
+.contenido-header a {
   text-decoration: none;
 }
-#inicio .contenido-header h1 {
+.contenido-header h1 {
   text-align: center;
   font-size: 3rem;
   color: #1877F2;
 }
-#inicio .seleccionado {
-  color: #1877F2;
-}
-#inicio .fa-brands.fa-npm {
-  color: #fff;
-}
-
 .contenido-header nav ul {
   list-style: none;
   display: flex;
@@ -594,7 +494,6 @@ template {
 }
 .presentacion h2 {
   font-size: 3rem;
-  margin-bottom: 2.5rem;
   text-align: center;
 }
 .presentacion h2 span {
@@ -617,7 +516,6 @@ template {
 }
 .presentacion .descripcion {
   max-width: 70rem;
-  margin: 2.5rem auto;
   font-size: 1.8rem;
   text-align: center;
   line-height: 2.5rem;
@@ -634,6 +532,7 @@ template {
   padding: 3rem 1.5rem;
   color: #111135;
   display: flex;
+  align-items: center;
 }
 #sobreMi .titulo-seccion {
   font-size: 3rem;
@@ -646,11 +545,10 @@ template {
 
 .contenedor-foto {
   max-width: 40rem;
-  margin-right: 8rem;
 }
 .contenedor-foto img {
   padding: 2rem;
-  width: 100%;
+  width: 80%;
   border-radius: 5rem;
   background-color: #f3f3f3;
 }
@@ -658,21 +556,10 @@ template {
 .sobremi {
   margin: 0 4rem;
 }
-.sobremi h2 {
+.sobremi h1 {
   font-size: 3.4rem;
-  font-weight: bold;
   margin: 2rem 0;
   letter-spacing: 0.2rem;
-}
-.sobremi h2 span {
-  color: #1877F2;
-}
-.sobremi h3 {
-  font-size: 1.8rem;
-  font-weight: 500;
-  text-transform: uppercase;
-  margin-bottom: 2rem;
-  letter-spacing: 0.1rem;
 }
 .sobremi p {
   font-size: 1.4rem;
@@ -701,10 +588,19 @@ template {
 }
 #servicios .fila {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: 2rem;
-  max-width: 110rem;
-  margin: auto;
+}
+#servicios .fila .nota {
+  font-size: 2rem;
+  grid-column: 1/5;
+  grid-row: 2/3;
+}
+#servicios .fila .nota h1 {
+  margin: 0;
+}
+#servicios .tecnologia i {
+  font-size: 4rem;
 }
 #servicios .servicio {
   max-width: 35rem;
@@ -721,35 +617,18 @@ template {
   font-size: 2.2rem;
   margin-bottom: 2.5rem;
 }
-#servicios .servicio hr {
-  width: 30%;
-  margin: auto;
-  color: #000;
-  margin-bottom: 2.5rem;
+#servicios .servicio .tecno {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
 }
-#servicios .servicio ul {
-  list-style: none;
+#servicios .servicio .tecno .tecnologia {
   display: flex;
-  justify-content: center;
-  margin-bottom: 1rem;
-}
-#servicios .servicio p {
-  font-size: 1.4rem;
-  line-height: 2.2rem;
-}
-#servicios .servicio .icono {
-  display: inline-block;
-  font-size: 2rem;
-  border-radius: 50%;
-  background-color: #f3f3f3;
-  padding: 2rem;
-  margin-bottom: 2.5rem;
+  flex-direction: column;
 }
 
 #portfolio {
-  max-width: 110rem;
   padding: 3rem 1rem;
-  margin: auto;
 }
 #portfolio .titulo-seccion {
   text-align: center;
@@ -760,13 +639,16 @@ template {
   text-decoration-color: #d3d3d3;
   text-decoration-thickness: 0.5rem;
 }
-#portfolio .fila {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 1rem;
+#portfolio .filas {
+  display: flex;
+  justify-content: space-between;
   margin: 3rem 0;
 }
-#portfolio .fila:last-of-type {
+#portfolio .filas:last-of-type {
+  justify-content: center;
+}
+#portfolio .desarrollo {
+  display: flex;
   justify-content: center;
 }
 #portfolio .proyecto {
@@ -774,12 +656,17 @@ template {
   border: 0.1rem solid #000;
   margin: 0 1rem;
   background-color: #f3f3f3;
+  transition: 0.5s;
+}
+#portfolio .proyecto:hover {
+  box-shadow: 0.5rem 0.5rem 1rem #565656, -0.5rem -0.5rem 1rem #bababa;
 }
 #portfolio .proyecto img {
   width: 100%;
   height: 100%;
 }
 #portfolio .proyecto .info {
+  padding: 1rem;
   color: #000;
   width: 100%;
   margin-top: 1rem;
@@ -798,7 +685,8 @@ template {
   text-align: center;
 }
 #portfolio .ver {
-  text-align: center;
+  display: flex;
+  justify-content: center;
 }
 
 #contacto {
@@ -818,45 +706,32 @@ template {
 #contacto .contenedor-form {
   max-width: 110rem;
   margin: auto;
-}
-#contacto .contenedor-form input, #contacto .contenedor-form textarea {
-  font-size: 1.5rem;
-  padding: 2rem;
-  border-radius: 2rem;
-  border: none;
-  border: 0.1rem solid #919191;
-}
-#contacto .fila {
-  margin-bottom: 1.5rem;
-}
-#contacto .mitad {
+  text-align: center;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
 }
-#contacto .mitad input {
-  width: 40%;
+#contacto .whatsapp i {
+  margin-left: 1rem;
 }
-#contacto .input-full {
-  width: 100%;
+#contacto .whatsapp a:hover {
+  background-color: #128c7e;
 }
-#contacto .btn-enviar {
-  display: block;
-  margin: auto;
-  cursor: pointer;
-  transition: 0.5s;
-  padding: 1rem 1.5rem;
-  font-weight: bold;
+#contacto .correo i {
+  margin-left: 1rem;
 }
-#contacto .btn-enviar:hover {
-  background-color: #1877F2;
-  color: #fff;
+
+#proyectos {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../../../build/img/portafolio.jpg");
+  background-size: cover;
+  background-position: center center;
+  height: 50vh;
 }
 
 footer {
   background-color: #000;
   color: #fff;
   text-align: center;
-  padding: 3rem 0;
+  padding: 1rem 0;
 }
 footer p {
   letter-spacing: 0.2rem;
@@ -865,4 +740,123 @@ footer p {
 footer .redes {
   margin-top: 1rem;
   justify-content: center;
+}
+
+@media (max-width: 768px) {
+  #inicio .redes {
+    display: none;
+  }
+}
+@media (max-width: 768px) {
+  #inicio nav {
+    display: none;
+  }
+}
+@media (max-width: 1024px) {
+  #inicio nav.responsive {
+    display: block;
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 100%;
+    position: absolute;
+    top: 5.4rem;
+    left: 0;
+    padding: 1rem 0;
+  }
+}
+@media (max-width: 768px) {
+  #inicio nav.responsive ul {
+    display: block !important;
+    text-align: center;
+    padding: 0;
+  }
+}
+@media (max-width: 768px) {
+  #inicio nav.responsive ul li {
+    margin: 1rem 0;
+  }
+}
+@media (max-width: 768px) {
+  #inicio #icono-nav {
+    display: block;
+    font-size: 2.5rem;
+    cursor: pointer;
+  }
+}
+@media (max-width: 768px) {
+  #inicio .presentacion h2 {
+    font-size: 4rem;
+  }
+}
+
+@media (max-width: 768px) {
+  #sobreMi {
+    text-align: center;
+    padding: 5rem 0;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 768px) {
+  #servicios {
+    padding: 5rem 1.5rem;
+  }
+}
+@media (max-width: 1024px) {
+  #servicios .fila .nota {
+    grid-column: 2/4;
+    grid-row: 2/3;
+    display: flex;
+    align-items: center;
+  }
+}
+@media (max-width: 768px) {
+  #servicios .fila .nota {
+    grid-column: 1/3;
+    grid-row: 3/4;
+  }
+}
+@media (max-width: 480px) {
+  #servicios .fila {
+    display: block;
+  }
+}
+@media (max-width: 768px) {
+  #servicios .servicio {
+    margin: 1rem auto;
+  }
+}
+
+@media (max-width: 768px) {
+  #portafolio {
+    padding: 5rem 0;
+  }
+}
+@media (max-width: 480px) {
+  #portafolio .filas {
+    display: block;
+  }
+}
+@media (max-width: 768px) {
+  #portafolio .filas .proyecto {
+    margin: 1rem auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .contacto {
+    padding: 5rem 1.5rem;
+    padding-top: 0;
+  }
+}
+@media (max-width: 768px) {
+  .contacto .contenedor-form .mitad {
+    margin-bottom: 1.5rem;
+    display: block;
+  }
+}
+@media (max-width: 768px) {
+  .contacto .contenedor-form .mitad input {
+    width: 100%;
+    margin-bottom: 1.5rem;
+  }
 }

@@ -12,12 +12,12 @@
             display: none;
         }
         &.responsive {
-            @include m.tablet {
+            @include m.desktop {
                 display: block;
                 background-color: rgba(0,0,0,.8);
                 width: 100%;
                 position: absolute;
-                top: 4.8rem;
+                top: 5.4rem;
                 left: 0;
                 padding: 1rem 0;
             }
@@ -25,6 +25,7 @@
                 @include m.tablet {
                     display: block !important;
                     text-align: center;
+                    padding: 0;
                 }
                 li {
                     @include m.tablet {
@@ -51,32 +52,9 @@
 }
 #sobreMi {
     @include m.tablet {
+        text-align: center;
         padding: 5rem 0;
-        display: block;
-    }
-    .contenedor-foto {
-        @include m.tablet {
-            max-width: 30rem;
-            margin: auto;
-        }
-        img {
-            @include m.tablet {
-               padding: .8rem;
-            }
-        }
-    }
-    .titulo-seccion {
-        @include m.tablet {
-            margin-top: 1.5rem;
-            text-align: center;
-        }
-    }
-    .sobremi {
-        h2 {
-            @include m.tablet {
-                text-align: center;
-            }
-        }
+        flex-direction: column;
     }
 }
 #servicios {
@@ -84,7 +62,19 @@
         padding: 5rem 1.5rem;       
     }
     .fila {
-        @include m.tablet {
+        .nota {
+            @include m.desktop {
+                grid-column: 2 / 4;
+                grid-row: 2 / 3;
+                display: flex;
+                align-items: center;
+            }
+            @include m.tablet {
+                grid-column: 1 / 3;
+                grid-row: 3 / 4;
+            }
+        }
+        @include m.celular {
             display: block;
         }
     }
@@ -98,8 +88,8 @@
     @include m.tablet {
         padding: 5rem 0;
     }
-    .fila {
-        @include m.tablet {
+    .filas {
+        @include m.celular {
             display: block;
         }
         .proyecto {

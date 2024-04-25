@@ -13,9 +13,15 @@ html{
 body {
     font-family: v.$principal;
 }
-h1, h2, h3 {
+h1, h2, h3, h4 {
     margin: 0;
-} //    Boton
+} 
+.contenedor {
+    width: 95%;
+    max-width: 120rem;
+    margin: 0 auto;
+}
+//    Boton
 .btn {
     a {
         text-decoration: none;
@@ -39,7 +45,7 @@ h1, h2, h3 {
     display: flex;
     .fa-brands {
         margin: .5rem;
-        font-size: 2.5rem;
+        font-size: 3rem;
         &.fa-css3-alt {
             color: v.$css;
         }
@@ -59,12 +65,27 @@ h1, h2, h3 {
             color: v.$gulp;
         }
         &.fa-npm {
-            color: v.$negro;
+            color: v.$npm;
+        }
+        &.fa-node {
+            color: v.$node;
+        }
+        &.fa-vuejs {
+            color: v.$vue;
+        }
+        &.fa-git-alt {
+            color: v.$git;
+        }
+        &.fa-bootstrap {
+            color: v.$boot;
+        }
+        &.fa-github {
+            color: v.$gitHub;
         }
     }
     .fa-solid {
         margin: .5rem;
-        font-size: 2.5rem;
+        font-size: 3rem;
         &.fa-database {
             color: v.$sql;
         }
@@ -80,14 +101,14 @@ h1, h2, h3 {
         margin: auto;
         transition: .5s;
     }
-    .face {
+    .linkedin {
         a:hover {
             color: v.$azul;
         }
     }
     .git {
         a:hover {
-            color: v.$morado;
+            color: v.$gitHub;
         }
     }
 }

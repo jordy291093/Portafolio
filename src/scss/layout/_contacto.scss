@@ -19,44 +19,21 @@
     .contenedor-form {
         max-width: 110rem;
         margin: auto;
-
-        input, textarea {
-            font-size: 1.5rem;
-            padding: 2rem;
-            border-radius: 2rem;
-            border: none;
-            border: .1rem solid #919191;
-        }
-    }
-
-    .fila {
-        margin-bottom: 1.5rem;
-    }
-
-    .mitad {
+        text-align: center;
         display: flex;
-        justify-content: space-between;
-
-        input {
-            width: 40%;
+        justify-content: center;
+    }
+    .whatsapp {
+        i {
+            margin-left: 1rem;
+        }
+        a:hover{
+            background-color: v.$whats;
         }
     }
-
-    .input-full {
-        width: 100%;
-    }
-
-    .btn-enviar {
-        display: block;
-        margin: auto;
-        cursor: pointer;
-        transition: .5s;
-        padding: 1rem 1.5rem ;
-        font-weight: bold;
-
-        &:hover {
-            background-color: v.$azul;
-            color: v.$blanco;
+    .correo {
+        i {
+            margin-left: 1rem;
         }
     }
 }
