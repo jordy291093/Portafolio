@@ -21,6 +21,16 @@ h1, h2, h3, h4 {
     max-width: 120rem;
     margin: 0 auto;
 }
+.titulo-seccion {
+    margin-bottom: 2rem;
+    font-size: 3rem;
+    text-align: center;
+    text-transform: uppercase;
+    color: v.$azul;
+    text-decoration: underline;
+    text-decoration-color: v.$grisOscuro;
+    text-decoration-thickness: .5rem;
+}
 //    Boton
 .btn {
     a {
@@ -92,23 +102,27 @@ h1, h2, h3, h4 {
     }
 }
 //  Redes
-.redes {
-    display: flex;
-    gap: 1rem;
-    a {
-        font-size: 2.5rem;
-        color: v.$blanco;
-        margin: auto;
-        transition: .5s;
-    }
-    .linkedin {
-        a:hover {
-            color: v.$azul;
+#inicio,
+#proyectos,
+#derechos {
+    .redes {
+        display: flex;
+        gap: 1rem;
+        a {
+            font-size: 2.5rem;
+            color: v.$blanco;
+            margin: auto;
+            transition: .5s;
         }
-    }
-    .git {
-        a:hover {
-            color: v.$gitHub;
+        .linkedin {
+            a:hover {
+                color: v.$azul;
+            }
+        }
+        .git {
+            a:hover {
+                color: v.$gitHub;
+            }
         }
     }
 }

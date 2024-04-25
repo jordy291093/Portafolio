@@ -10,7 +10,7 @@
     <title>Portafolio</title>
 </head>
 <body>
-    <section id="proyectos" class="inicio-proyecto"> 
+    <section id="proyectos"> 
         <div class="contenido">
             <header>
                 <div class="contenido-header">
@@ -19,6 +19,9 @@
                         <ul id="links">
                             <li><a href="index.html" class="seleccionado" onclick="seleccionar(this)">Inicio</a></li>
                             <li><a href="#portfolio" onclick="seleccionar(this)">Portafolio</a></li>
+                            <div class="mode">
+                                <i class="fa-solid fa-lightbulb darkMode"></i>
+                            </div>
                         </ul>
                     </nav>
 
@@ -41,7 +44,7 @@
         </div> 
     </section> <!-- fin inicio -->
 
-    <section id="portfolio">
+    <section id="portfolio" class="contenedor">
         <h3 class="titulo-seccion">Mis proyectos</h3>
         <div class="fila">
             <div class="proyecto">
@@ -160,14 +163,16 @@
         </div>
     </section> <!-- fin portafolio -->
 
-    <footer>
-        <p>Todos los derechos reservados 2024&copy;</p>
-        <div class="redes">
-            <div class="linkedin">
-                <a href="https://www.linkedin.com/in/jordydev/" target="_blank"><i class="fa-brands fa-linkedin"></i></i></a>
-            </div>
-            <div class="git">
-                <a href="https://github.com/jordy291093" target="_blank"><i class="fa-brands fa-github"></i></a>
+    <footer id="derechos">
+        <div class="contenedor">
+            <p>Todos los derechos reservados 2024&copy;</p>
+            <div class="redes">
+                <div class="linkedin">
+                    <a href="https://www.linkedin.com/in/jordydev/" target="_blank"><i class="fa-brands fa-linkedin"></i></i></a>
+                </div>
+                <div class="git">
+                    <a href="https://github.com/jordy291093" target="_blank"><i class="fa-brands fa-github"></i></a>
+                </div>
             </div>
         </div>
     </footer>

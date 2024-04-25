@@ -65,6 +65,14 @@
             }
         }
     }
+    .mode {
+        i {
+            margin-left: 1rem;
+            font-size: 2.5rem;
+            color: v.$focoOn;
+            cursor: pointer;
+        }
+    }
 }
 .presentacion {
     max-width: 110rem;

@@ -1,0 +1,64 @@
+@use 'base/mixins' as m;
+@use 'base/variables' as v;
+
+.dark-mode {
+    background-color: darken(v.$grisOscuro, 10);
+    .mode {
+        .darkMode {
+            color: v.$focoOff;
+        }
+    }
+    #sobreMi,
+    #proyectos,
+    #servicios,
+    #portfolio,
+    #contacto {
+        p {
+            color: darken(v.$grisClaro, 10);
+        }
+    
+        a, h1, h2, h3, h4 {
+            color: darken(v.$grisClaro, 10);
+        }
+    }
+    #servicios,
+    #contacto {
+        background-color: v.$grisOscuro;
+    }
+    #servicios {
+        .servicio{
+            background-color: darken(v.$grisOscuro, 10);
+            .tecnologia {
+                .fa-solid {
+                    &.fa-database {
+                        color: darken(v.$grisClaro, 10);
+                    }
+                }
+            }
+        }
+    }
+    #portfolio {
+        .proyecto {
+            background-color: v.$grisOscuro;
+        }
+    }
+    .pantalla {
+        display: flex;
+        .fa-solid {
+            margin: .5rem;
+            font-size: 2.5rem;
+            color: darken(v.$grisClaro, 10);
+        }
+    }
+    .tecnologia {
+        display: flex;
+        
+        .fa-solid {
+            margin: .5rem;
+            font-size: 3rem;
+            &.fa-database {
+                color: darken(v.$grisClaro, 10);
+            }
+        }
+    }
+}

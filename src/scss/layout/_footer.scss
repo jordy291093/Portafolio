@@ -1,12 +1,11 @@
 @use 'base/mixins' as m;
 @use 'base/variables' as v;
 
-footer {
+#derechos {
     background-color: v.$negro;
     color: v.$blanco;
     text-align: center;
     padding: 1rem 0;
-
     p {
         letter-spacing: .2rem;
         font-size: 2rem;

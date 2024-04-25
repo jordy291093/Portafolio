@@ -1,7 +1,8 @@
 @use 'base/mixins' as m;
 @use 'base/variables' as v;
 
-#inicio {
+#inicio,
+#proyectos {
     .redes {
         @include m.tablet {
             display: none;
@@ -17,7 +18,7 @@
                 background-color: rgba(0,0,0,.8);
                 width: 100%;
                 position: absolute;
-                top: 5.4rem;
+                top: 6rem;
                 left: 0;
                 padding: 1rem 0;
             }
@@ -84,38 +85,29 @@
         }
     }
 }
-#portafolio {
-    @include m.tablet {
-        padding: 5rem 0;
-    }
-    .filas {
-        @include m.celular {
-            display: block;
+#portfolio {
+    .fila {
+        @include m.tablet {
+            @include m.grid(2, 1rem);
         }
-        .proyecto {
-            @include m.tablet {
-                margin: 1rem auto;
-            }
+        @include m.celular {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+    }
+    .desarrollo {
+        @include m.tablet {
+            display: flex;
+            justify-content: center;
         }
     }
 }
-.contacto {
-    @include m.tablet {
-        padding: 5rem 1.5rem;
-        padding-top: 0;
-    }
-    .contenedor-form {
-        .mitad {
-            @include m.tablet {
-                margin-bottom: 1.5rem;
-                display: block;
-            }
-            input {
-                @include m.tablet {
-                    width: 100%;
-                    margin-bottom: 1.5rem;
-                }
-            }
+#contacto {
+    .fila {
+        @include m.tablet {
+            display: block;
+            text-align: center;
         }
     }
 }

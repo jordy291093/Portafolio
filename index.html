@@ -22,6 +22,9 @@
                             <li><a href="#servicios" onclick="seleccionar(this)">Servicios</a></li>
                             <li><a href="#portfolio" onclick="seleccionar(this)">Portafolio</a></li>
                             <li><a href="#contacto" onclick="seleccionar(this)">Contacto</a></li>
+                            <div class="mode">
+                                <i class="fa-solid fa-lightbulb darkMode"></i>
+                            </div>
                         </ul>
                     </nav>
 
@@ -74,7 +77,7 @@
                 Soy de Cd. Juárez, Chihuahua, México
             </p>
             <div class="btn">
-                <a href="src/file/Jordy Manuel_Menchaca Rodriguez_CV.pdf" download >Descargar CV</a>
+                <a href="src/file/Jordy Manuel_Menchaca Rodriguez_CV.pdf" download >Descargar CV <i class="fa-solid fa-file-pdf"></i></a>
             </div>
         </div>
     </section> <!-- fin sobreMi -->
@@ -166,8 +169,8 @@
     </section> <!-- fin servicios -->
 
     <section id="portfolio" class="contenedor">
-        <h3 class="titulo-seccion">Mis proyectos</h3>
-        <div class="filas">
+        <h4 class="titulo-seccion">Mis proyectos</h4>
+        <div class="fila">
             <div class="proyecto">
                 <div class="imagen">
                     <img src="build/img/Proyecto-4.webp" alt="Proyecto audifonos">
@@ -233,24 +236,26 @@
 
     <section id="contacto">
         <h3 class="titulo-seccion">Contactame</h3>
-        <div class="contenedor-form">
-                <div class="whatsapp btn">
-                    <a href="https://api.whatsapp.com/send/?phone=526563114003&text&type=phone_number&app_absent=0">WhatsApp <i class="fa-brands fa-whatsapp"></i></a>
-                </div>
-                <div class="correo btn">
-                    <a href="mailto:jordy.itcj@gmail.com">jordy.itcj@gmail.com <i class="fa-regular fa-envelope"></i></a>
-                </div>
+        <div class="contenedor fila">
+            <div class="whatsapp btn">
+                <a href="https://api.whatsapp.com/send/?phone=526563114003&text&type=phone_number&app_absent=0">WhatsApp <i class="fa-brands fa-whatsapp"></i></a>
+            </div>
+            <div class="correo btn">
+                <a href="mailto:jordy.itcj@gmail.com" target="_blank">jordy.itcj@gmail.com <i class="fa-regular fa-envelope"></i></a>
+            </div>
         </div>
     </section> <!-- fin Contacto -->
 
-    <footer>
-        <p>Todos los derechos reservados 2024&copy;</p>
-        <div class="redes">
-            <div class="linkedin">
-                <a href="https://www.linkedin.com/in/jordydev/" target="_blank"><i class="fa-brands fa-linkedin"></i></i></a>
-            </div>
-            <div class="git">
-                <a href="https://github.com/jordy291093" target="_blank"><i class="fa-brands fa-github"></i></a>
+    <footer id="derechos">
+        <div class="contenedor">
+            <p>Todos los derechos reservados 2024&copy;</p>
+            <div class="redes">
+                <div class="linkedin">
+                    <a href="https://www.linkedin.com/in/jordydev/" target="_blank"><i class="fa-brands fa-linkedin"></i></i></a>
+                </div>
+                <div class="git">
+                    <a href="https://github.com/jordy291093" target="_blank"><i class="fa-brands fa-github"></i></a>
+                </div>
             </div>
         </div>
     </footer>

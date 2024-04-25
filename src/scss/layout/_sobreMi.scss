@@ -8,15 +8,6 @@
     color: v.$azulOscuro;
     display: flex;
     align-items: center;
-
-    .titulo-seccion {
-        font-size: 3rem;
-        text-transform: uppercase;
-        color: v.$azulOscuro;
-        text-decoration: underline;
-        text-decoration-color: #d3d3d3;
-        text-decoration-thickness: .5rem;
-    }
 }
 .contenedor-foto {
     max-width: 40rem;
@@ -45,5 +36,10 @@
     span {
         color: v.$moradoudemy;
         font-weight: bold;
+    }
+    .fa-file-pdf {
+        margin-left: 1rem;
+        font-size: 2rem;
+        color: v.$adobe;
     }
 }

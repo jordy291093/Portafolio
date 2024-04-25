@@ -4,22 +4,7 @@
 #contacto {
     padding: 3rem 1.5rem;
     background-color: v.$grisClaro;
-
-    .titulo-seccion {
-        margin-bottom: 2rem;
-        font-size: 3rem;
-        text-align: center;
-        text-transform: uppercase;
-        color: v.$azul;
-        text-decoration: underline;
-        text-decoration-color: v.$grisOscuro;
-        text-decoration-thickness: .5rem;
-    }
-
-    .contenedor-form {
-        max-width: 110rem;
-        margin: auto;
-        text-align: center;
+    .fila {
         display: flex;
         justify-content: center;
     }

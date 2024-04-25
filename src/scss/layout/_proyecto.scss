@@ -1,6 +1,30 @@
+@use 'base/mixins' as m;
+@use 'base/variables' as v;
+
 #proyectos {
     background: linear-gradient(rgba(0,0,0,.7), rgba(0,0,0,.7)), url("../../../build/img/portafolio.jpg");
     background-size: cover;
     background-position: center center;
     height: 50vh;
+    .contenido-header {
+        h1 {
+            text-align: center;
+            font-size: 3rem;
+            color: v.$azul; 
+        }
+        nav {
+            ul {
+                li {
+                    a {
+                        color: v.$blanco;
+                        transition: .5s;
+    
+                        &:hover {
+                            color: v.$azul;
+                        }
+                    }
+                }
+            }
+        }
+    }
 }

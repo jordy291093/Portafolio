@@ -1,3 +1,7 @@
+document.addEventListener('DOMContentLoaded', function(){
+    darkMode();
+});
+
 // Funcion que se aplica el estilo a la opcion seleccionado del menu y quita la previamente seleccionado
 function seleccionar(link) {
     var opciones = document.querySelectorAll('#links a');
@@ -20,6 +24,33 @@ function responsiveMenu() {
     } else {
         menu.className = "";
     }
+}
+function darkMode () {
+
+    // Modo oscuro depende del sistema del equipo
+    const darkSistem = window.matchMedia('(prefers-color-scheme: dark)');
+
+    // console.log(darkSistem.matches);
+
+    if(darkSistem.matches) {
+        document.body.classList.add('dark-mode');
+    } else {
+        document.body.classList.remove('dark-mode');
+    }
+
+    darkSistem.addEventListener('change', function() {
+        if(darkSistem.matches) {
+            document.body.classList.add('dark-mode');
+        } else {
+            document.body.classList.remove('dark-mode');
+        }
+    });
+
+    // modo oscuro en sitio web
+    const botonDarkMode = document.querySelector('.darkMode');
+    botonDarkMode.addEventListener('click', function(){
+        document.body.classList.toggle('dark-mode')
+    });
 }
 
 // Detecto del scroll para aplicar la animacion de las barras
