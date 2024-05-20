@@ -361,6 +361,8 @@ h1, h2, h3, h4 {
 
 .tecnologia {
   display: flex;
+  gap: 0.5rem;
+  align-items: center;
 }
 .tecnologia .fa-brands {
   margin: 0.5rem;
@@ -500,9 +502,6 @@ h1, h2, h3, h4 {
   margin: 0.5rem;
   font-size: 2.5rem;
   color: #dadada;
-}
-.dark-mode .tecnologia {
-  display: flex;
 }
 .dark-mode .tecnologia .fa-solid {
   margin: 0.5rem;
